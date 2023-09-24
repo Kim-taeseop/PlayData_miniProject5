@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>학생 시간표</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous">
+  <style>
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      z-index: 100;
+    }
+
+    body:not(header) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #c8ebe1;
+    }
+
+    .content {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .content h4 {
+      text-align: center;
+    }
+
+    .content p {
+      font-weight: bold;
+    }
+    table.table-bordered {
+      border: 1px solid gray;
+    }
+
+  </style>
+</head>
+<body>
+<header th:replace="fragments/student/header :: header"></header>
+  <div class="container mt-5">
+    <table class="table table-bordered text-center">
+    <thead>
+    <tr>
+      <th></th> <!-- 빈 머리글 칸 -->
+      <th>월요일</th>
+      <th>화요일</th>
+      <th>수요일</th>
+      <th>목요일</th>
+      <th>금요일</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>9:00 - 10:00</td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 9 and course.endtime > 9 and course.day == '월'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 9 and course.endtime > 9 and course.day == '화'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 9 and course.endtime > 9 and course.day == '수'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 9 and course.endtime > 9 and course.day == '목'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 9 and course.endtime > 9 and course.day == '금'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>10:00 - 11:00</td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 10 and course.endtime > 10 and course.day == '월'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 10 and course.endtime > 10 and course.day == '화'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 10 and course.endtime > 10 and course.day == '수'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 10 and course.endtime > 10 and course.day == '목'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 10 and course.endtime > 10 and course.day == '금'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+    </tr>
+
+
+    <tr>
+      <td>11:00 - 12:00</td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 11 and course.endtime > 11 and course.day == '월'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 11 and course.endtime > 11 and course.day == '화'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 11 and course.endtime > 11 and course.day == '수'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 11 and course.endtime > 11 and course.day == '목'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 11 and course.endtime > 11 and course.day == '금'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+    </tr>
+
+
+    <tr>
+      <td>12:00 - 13:00</td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 12 and course.endtime > 12 and course.day == '월'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 12 and course.endtime > 12 and course.day == '화'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 12 and course.endtime > 12 and course.day == '수'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 12 and course.endtime > 12 and course.day == '목'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 12 and course.endtime > 12 and course.day == '금'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+    </tr>
+
+
+    <tr>
+      <td>13:00 - 14:00</td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 13 and course.endtime > 13 and course.day == '월'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 13 and course.endtime > 13 and course.day == '화'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 13 and course.endtime > 13 and course.day == '수'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 13 and course.endtime > 13 and course.day == '목'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 13 and course.endtime > 13 and course.day == '금'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+    </tr>
+
+
+    <tr>
+      <td>14:00 - 15:00</td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 14 and course.endtime > 14 and course.day == '월'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 14 and course.endtime > 14 and course.day == '화'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 14 and course.endtime > 14 and course.day == '수'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 14 and course.endtime > 14 and course.day == '목'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 14 and course.endtime > 14 and course.day == '금'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+    </tr>
+
+
+    <tr>
+      <td>15:00 - 16:00</td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 15 and course.endtime > 15 and course.day == '월'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 15 and course.endtime > 15 and course.day == '화'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 15 and course.endtime > 15 and course.day == '수'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 15 and course.endtime > 15 and course.day == '목'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 15 and course.endtime > 15 and course.day == '금'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+    </tr>
+
+
+    <tr>
+      <td>16:00 - 17:00</td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 16 and course.endtime > 16 and course.day == '월'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 16 and course.endtime > 16 and course.day == '화'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 16 and course.endtime > 16 and course.day == '수'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 16 and course.endtime > 16 and course.day == '목'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 16 and course.endtime > 16 and course.day == '금'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+    </tr>
+
+
+    <tr>
+      <td>17:00 - 18:00</td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 17 and course.endtime > 17 and course.day == '월'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 17 and course.endtime > 17 and course.day == '화'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 17 and course.endtime > 17 and course.day == '수'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 17 and course.endtime > 17 and course.day == '목'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+      <td>
+        <span th:each="course : ${timetable}"
+              th:if="${course.starttime <= 17 and course.endtime > 17 and course.day == '금'}"
+              th:text="${course.name}">
+        </span>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+    <a href="/student/home">
+      <button>홈으로</button>
+    </a>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</html>
