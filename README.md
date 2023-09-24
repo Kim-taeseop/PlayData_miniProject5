@@ -130,3 +130,152 @@ Session을 사용
 ### 3. 학생페이지 기능
 
 
+#### 1. 자신이 속한 학과의 수강 리스트
+자신이 속한 학과의 과목들만 보여야함.
+
+=> 로그인시 session에 담긴 정보를 들고옴 > 자신이 속한 학과 찾기 > 학과에 속한 교수들 찾기 > 교수별 과목을 리스트로 저장
+
+        @GetMapping("/student/studentcourselist")
+        public String studentCourseList(Model model, HttpSession session){
+            Student loggedInStudent = (Student) session.getAttribute("user");
+        if (loggedInStudent != null) {
+            // 학생이 속한 학과 찾기
+            Department studentDepartment =   
+            loggedInStudent.getSdepartment();
+
+            // 학과에 속한 교수들 찾기
+            List<Professor> professors = 
+            courseService.professorListByDepartment(studentDepartment);
+
+            // 교수별 과목 리스트를 저장할 리스트
+            List<List<Course>> professorCoursesList = new ArrayList<>();
+
+            for (Professor professor : professors) {
+                Long professorId = professor.getId();
+                // 교수별 과목 리스트 가져오기
+                List<Course> professorCourses = courseService.studentCourseList(professorId);
+                professorCoursesList.add(professorCourses);
+            }
+
+            model.addAttribute("professors", professors);
+            model.addAttribute("professorCoursesList", professorCoursesList);
+
+            // 수강 신청을 위한 id 가져옴
+            Long studentId = loggedInStudent.getId();
+            model.addAttribute("studentId", studentId);
+
+            return "student/studentcourselist";
+        } else {
+            // 로그인하지 않은 경우 로그인 페이지로 리다이렉트 또는 다른 처 
+        리 수행
+            return "redirect:/student/login";
+        }
+    }
+
+#### 2. 수강신청
+수강신청이 성공하기 위한 조건
+- 수강신청 기간이여야 함
+- 수강 가능한 자리가 있어야함
+- 중복된 과목은 두번 신청 불가
+- 수강 시간대가 서로 겹치면 불가
+
+
+1. 수강신청 기간이여야 함
+   LocalDateTime 을 이용하여 신청 가능한 시간을 지정
+
+         @PostMapping("/student/addcourse/{id}")
+          public String addToCourse(@PathVariable Long id, HttpSession session, Model model) {
+          Student loggedInStudent = (Student) session.getAttribute("user");
+  
+          // 현재 시간 구하기
+          LocalDateTime currentDateTime = LocalDateTime.now();
+  
+          // 허용되는 수강 신청 시간 범위 설정
+          LocalDateTime startDateTime = LocalDateTime.of(2023, 9, 21, 11, 0); // 시작 시간
+          LocalDateTime endDateTime = LocalDateTime.of(2023, 9, 25, 20, 0); // 종료 시간
+  
+          // 현재 시간이 허용 범위 내에 있는지 확인
+          if (currentDateTime.isBefore(startDateTime) || currentDateTime.isAfter(endDateTime)) {
+              return "redirect:/student/studentcourselist?timeError";
+          }
+
+2. 수강 가능한 자리가 있어야함.
+  course 테이블의 현재 신청 가능인원이 0보다 크지 않으면 null 값을 반환 하여 0초과인 경우만 수강신청을 진행
+
+   
+        public Course enrollStudentInCourse(Long courseId) {
+        Course course = courseRepository.findById(courseId).orElse(null);
+
+        if (course != null && course.getSeat() > 0) {
+            course.updateSeat();
+            courseRepository.save(course);
+            return course;
+        }
+        return null;
+        }
+
+3. 중복되는 시간 검사
+   중복검사 메서드 따로 분리
+
+   완전중복, 시작시간 중복, 종료시간 중복 3가지로 검사
+
+          // 중복 검사 메서드
+        private boolean isCourseOverlapping(List<Enrollment> studentEnrollments, Course currentCourse) {
+        int currentCourseStartTime = currentCourse.getStarttime();
+        int currentCourseEndTime = currentCourse.getEndtime();
+        String currentCourseDay = currentCourse.getDay();
+
+        for (Enrollment enrollment : studentEnrollments) {
+            Course enrolledCourse = enrollment.getCourse();
+            if (enrolledCourse != null) {
+                int enrolledCourseStartTime = enrolledCourse.getStarttime();
+                int enrolledCourseEndTime = enrolledCourse.getEndtime();
+                String enrolledCourseDay = enrolledCourse.getDay();
+
+                if (currentCourseDay.equals(enrolledCourseDay)) {
+                    if (currentCourseStartTime == enrolledCourseStartTime && currentCourseEndTime == enrolledCourseEndTime) {
+                        return true; // 완전히 중복되는 경우
+                    } else if (currentCourseStartTime >= enrolledCourseStartTime && currentCourseStartTime < enrolledCourseEndTime) {
+                        return true; // 시작 시간 중복
+                    } else if (currentCourseEndTime > enrolledCourseStartTime && currentCourseEndTime <= enrolledCourseEndTime) {
+                        return true; // 종료 시간 중복
+                    }
+                }
+            }
+        }
+        return false; // 중복 없음
+        }  
+
+#### 3. 현재 자리 업데이트
+수강신청 성공시 신청가능한 자리가 -1, 철회시 +1이 되야함.
+
+              // 수강신청시
+                    if (course.getSeat() > 0) {
+                        course.setSeat(course.getSeat() - 1);
+                    } else {
+                        return "redirect:/student/studentcourselist?seatError";
+                    }
+              // 수강 철회시
+              if (course != null) {
+                    course.setSeat(course.getSeat() + 1);
+                    courseRepository.save(course);
+                }
+
+#### 4. 수강시간표
+수강 시간표는 html에서 각 시간별로 칸을 나눈후 신청한 과목들의 starttime, endtime을 비교하여 조건에 맞으면 과목명을 나타내는 방식
+
+      <td>9:00 - 10:00</td>
+        <td>
+          <span th:each="course : ${timetable}"
+                th:if="${course.starttime <= 9 and course.endtime > 9 and course.day == '월'}"
+                th:text="${course.name}">
+          </span>
+        </td>
+
+
+---------------------------------------------------------
+
+## 🛠 더 추가하고 싶은 기능
+
+학년별로도 나눠서 각 학년에 맞는 과목들을 지정
+과목 검색기능 추가 ( 카테로리로 학년, 학과 선택 가능)
