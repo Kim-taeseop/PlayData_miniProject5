@@ -1,4 +1,4 @@
-package com.kts.tku2.service;
+package com.kts.tku2.service.student;
 
 import com.kts.tku2.data.entity.Course;
 import com.kts.tku2.data.entity.Enrollment;
@@ -19,6 +19,7 @@ public class TimetableService {
         this.enrollmentService = enrollmentService;
     }
 
+    // 수강 시간표 작성
     public List<Course> generateTimetable(Long studentId){
         List<Enrollment> studentEnrollments = enrollmentService.getStudentEnrollments(studentId);
         List<Course> timetable = new ArrayList<>();

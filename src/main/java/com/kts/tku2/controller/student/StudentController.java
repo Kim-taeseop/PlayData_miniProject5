@@ -2,7 +2,7 @@ package com.kts.tku2.controller.student;
 
 import com.kts.tku2.data.entity.Course;
 import com.kts.tku2.data.entity.Student;
-import com.kts.tku2.service.TimetableService;
+import com.kts.tku2.service.student.TimetableService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -21,6 +21,7 @@ public class StudentController {
         this.timetableService = timetableService;
     }
 
+    // 수강 테이블 생성
     @GetMapping("/student/timetable")
     public String viewTimetable(Model model, HttpSession session) {
         Student loggedInStudent = (Student) session.getAttribute("user");

@@ -1,62 +1,214 @@
-[2023-09-24 14:29:23.335] [INFO ] [main] com.kts.tku2.Tku2Application Starting Tku2Application using Java 11.0.19 on DESKTOP-5VEEVGU with PID 14232 (C:\intelj\tku3\target\classes started by Playdata in C:\intelj\tku3)
-[2023-09-24 14:29:23.351] [INFO ] [main] com.kts.tku2.Tku2Application No active profile set, falling back to default profiles: default
-[2023-09-24 14:29:24.194] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[2023-09-24 14:29:24.288] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 77 ms. Found 5 JPA repository interfaces.
-[2023-09-24 14:29:24.814] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8090 (http)
-[2023-09-24 14:29:24.829] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8090"]
-[2023-09-24 14:29:24.829] [INFO ] [main] org.apache.catalina.core.StandardService Starting service [Tomcat]
-[2023-09-24 14:29:24.829] [INFO ] [main] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.54]
-[2023-09-24 14:29:24.954] [INFO ] [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
-[2023-09-24 14:29:24.954] [INFO ] [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1525 ms
-[2023-09-24 14:29:25.173] [INFO ] [main] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
-[2023-09-24 14:29:25.236] [INFO ] [main] org.hibernate.Version HHH000412: Hibernate ORM core version 5.4.32.Final
-[2023-09-24 14:29:25.376] [INFO ] [main] org.hibernate.annotations.common.Version HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-[2023-09-24 14:29:25.486] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
-[2023-09-24 14:29:25.532] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
-[2023-09-24 14:29:25.564] [INFO ] [main] org.hibernate.dialect.Dialect HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
-[2023-09-24 14:29:26.235] [INFO ] [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[2023-09-24 14:29:26.235] [INFO ] [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
-[2023-09-24 14:29:26.751] [WARN ] [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[2023-09-24 14:29:26.970] [INFO ] [main] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping Adding welcome page template: index
-[2023-09-24 14:29:27.048] [WARN ] [main] org.thymeleaf.templatemode.TemplateMode [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-[2023-09-24 14:29:27.141] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8090"]
-[2023-09-24 14:29:27.173] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8090 (http) with context path ''
-[2023-09-24 14:29:27.173] [INFO ] [main] com.kts.tku2.Tku2Application Started Tku2Application in 4.645 seconds (JVM running for 6.037)
-[2023-09-24 14:29:38.197] [INFO ] [http-nio-8090-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
-[2023-09-24 14:29:38.197] [INFO ] [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
-[2023-09-24 14:29:38.197] [INFO ] [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet Completed initialization in 0 ms
-[2023-09-24 14:29:44.198] [WARN ] [http-nio-8090-exec-3] org.apache.catalina.util.SessionIdGeneratorBase Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [169] milliseconds.
-[2023-09-24 14:37:27.707] [INFO ] [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
-[2023-09-24 14:37:27.707] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
-[2023-09-24 14:37:27.722] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
-[2023-09-24 14:37:32.182] [INFO ] [main] com.kts.tku2.Tku2Application Starting Tku2Application using Java 11.0.19 on DESKTOP-5VEEVGU with PID 16080 (C:\intelj\tku3\target\classes started by Playdata in C:\intelj\tku3)
-[2023-09-24 14:37:32.198] [INFO ] [main] com.kts.tku2.Tku2Application No active profile set, falling back to default profiles: default
-[2023-09-24 14:37:32.917] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[2023-09-24 14:37:32.995] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 58 ms. Found 5 JPA repository interfaces.
-[2023-09-24 14:37:33.432] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8090 (http)
-[2023-09-24 14:37:33.448] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8090"]
-[2023-09-24 14:37:33.448] [INFO ] [main] org.apache.catalina.core.StandardService Starting service [Tomcat]
-[2023-09-24 14:37:33.448] [INFO ] [main] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.54]
-[2023-09-24 14:37:33.541] [INFO ] [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
-[2023-09-24 14:37:33.541] [INFO ] [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1281 ms
-[2023-09-24 14:37:33.713] [INFO ] [main] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
-[2023-09-24 14:37:33.760] [INFO ] [main] org.hibernate.Version HHH000412: Hibernate ORM core version 5.4.32.Final
-[2023-09-24 14:37:33.870] [INFO ] [main] org.hibernate.annotations.common.Version HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-[2023-09-24 14:37:33.963] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
-[2023-09-24 14:37:34.010] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
-[2023-09-24 14:37:34.026] [INFO ] [main] org.hibernate.dialect.Dialect HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
-[2023-09-24 14:37:34.776] [INFO ] [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[2023-09-24 14:37:34.791] [INFO ] [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
-[2023-09-24 14:37:35.275] [WARN ] [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[2023-09-24 14:37:35.463] [INFO ] [main] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping Adding welcome page template: index
-[2023-09-24 14:37:35.553] [WARN ] [main] org.thymeleaf.templatemode.TemplateMode [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-[2023-09-24 14:37:35.758] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8090"]
-[2023-09-24 14:37:35.803] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8090 (http) with context path ''
-[2023-09-24 14:37:35.819] [INFO ] [main] com.kts.tku2.Tku2Application Started Tku2Application in 4.374 seconds (JVM running for 5.72)
-[2023-09-24 14:37:40.695] [INFO ] [http-nio-8090-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
-[2023-09-24 14:37:40.695] [INFO ] [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
-[2023-09-24 14:37:40.695] [INFO ] [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet Completed initialization in 0 ms
-[2023-09-24 14:37:44.879] [WARN ] [http-nio-8090-exec-3] org.apache.catalina.util.SessionIdGeneratorBase Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [172] milliseconds.
-[2023-09-24 14:39:10.288] [INFO ] [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
-[2023-09-24 14:39:10.290] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
-[2023-09-24 14:39:10.296] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+[2023-09-25 09:26:05.375] [INFO ] [main] com.kts.tku2.Tku2Application Starting Tku2Application using Java 11.0.19 on DESKTOP-5VEEVGU with PID 16160 (C:\intelj\tku3\target\classes started by Playdata in C:\intelj\tku3)
+[2023-09-25 09:26:05.391] [INFO ] [main] com.kts.tku2.Tku2Application No active profile set, falling back to default profiles: default
+[2023-09-25 09:26:06.875] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-09-25 09:26:06.953] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 81 ms. Found 5 JPA repository interfaces.
+[2023-09-25 09:26:07.625] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8090 (http)
+[2023-09-25 09:26:07.640] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8090"]
+[2023-09-25 09:26:07.640] [INFO ] [main] org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2023-09-25 09:26:07.640] [INFO ] [main] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2023-09-25 09:26:07.781] [INFO ] [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+[2023-09-25 09:26:07.781] [INFO ] [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 2249 ms
+[2023-09-25 09:26:08.066] [INFO ] [main] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-09-25 09:26:08.128] [INFO ] [main] org.hibernate.Version HHH000412: Hibernate ORM core version 5.4.32.Final
+[2023-09-25 09:26:08.300] [INFO ] [main] org.hibernate.annotations.common.Version HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-09-25 09:26:08.394] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+[2023-09-25 09:26:08.456] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+[2023-09-25 09:26:08.472] [INFO ] [main] org.hibernate.dialect.Dialect HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+[2023-09-25 09:26:09.195] [INFO ] [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-09-25 09:26:09.211] [INFO ] [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-09-25 09:26:09.702] [WARN ] [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-09-25 09:26:09.905] [INFO ] [main] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping Adding welcome page template: index
+[2023-09-25 09:26:09.983] [WARN ] [main] org.thymeleaf.templatemode.TemplateMode [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+[2023-09-25 09:26:10.061] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8090"]
+[2023-09-25 09:26:10.077] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8090 (http) with context path ''
+[2023-09-25 09:26:10.092] [INFO ] [main] com.kts.tku2.Tku2Application Started Tku2Application in 6.362 seconds (JVM running for 9.242)
+[2023-09-25 09:38:25.509] [INFO ] [http-nio-8090-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-09-25 09:38:25.510] [INFO ] [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+[2023-09-25 09:38:25.511] [INFO ] [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet Completed initialization in 1 ms
+[2023-09-25 09:38:30.318] [WARN ] [http-nio-8090-exec-4] org.apache.catalina.util.SessionIdGeneratorBase Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [197] milliseconds.
+[2023-09-25 09:51:51.451] [INFO ] [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-09-25 09:51:51.451] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+[2023-09-25 09:51:51.467] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+[2023-09-25 09:51:57.143] [INFO ] [main] com.kts.tku2.Tku2Application Starting Tku2Application using Java 11.0.19 on DESKTOP-5VEEVGU with PID 9828 (C:\intelj\tku3\target\classes started by Playdata in C:\intelj\tku3)
+[2023-09-25 09:51:57.143] [INFO ] [main] com.kts.tku2.Tku2Application No active profile set, falling back to default profiles: default
+[2023-09-25 09:51:57.830] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-09-25 09:51:57.908] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 58 ms. Found 5 JPA repository interfaces.
+[2023-09-25 09:51:58.346] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8090 (http)
+[2023-09-25 09:51:58.361] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8090"]
+[2023-09-25 09:51:58.361] [INFO ] [main] org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2023-09-25 09:51:58.361] [INFO ] [main] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2023-09-25 09:51:58.471] [INFO ] [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+[2023-09-25 09:51:58.471] [INFO ] [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1266 ms
+[2023-09-25 09:51:58.627] [INFO ] [main] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-09-25 09:51:58.674] [INFO ] [main] org.hibernate.Version HHH000412: Hibernate ORM core version 5.4.32.Final
+[2023-09-25 09:51:58.767] [INFO ] [main] org.hibernate.annotations.common.Version HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-09-25 09:51:58.845] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+[2023-09-25 09:51:58.892] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+[2023-09-25 09:51:58.908] [INFO ] [main] org.hibernate.dialect.Dialect HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+[2023-09-25 09:51:59.497] [INFO ] [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-09-25 09:51:59.497] [INFO ] [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-09-25 09:51:59.943] [WARN ] [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-09-25 09:52:00.146] [INFO ] [main] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping Adding welcome page template: index
+[2023-09-25 09:52:00.209] [WARN ] [main] org.thymeleaf.templatemode.TemplateMode [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+[2023-09-25 09:52:00.287] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8090"]
+[2023-09-25 09:52:00.302] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8090 (http) with context path ''
+[2023-09-25 09:52:00.318] [INFO ] [main] com.kts.tku2.Tku2Application Started Tku2Application in 3.881 seconds (JVM running for 5.792)
+[2023-09-25 09:52:11.246] [INFO ] [http-nio-8090-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-09-25 09:52:11.246] [INFO ] [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+[2023-09-25 09:52:11.259] [INFO ] [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet Completed initialization in 13 ms
+[2023-09-25 09:52:17.235] [WARN ] [http-nio-8090-exec-3] org.apache.catalina.util.SessionIdGeneratorBase Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [175] milliseconds.
+[2023-09-25 09:53:35.397] [INFO ] [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-09-25 09:53:35.397] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+[2023-09-25 09:53:35.412] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+[2023-09-25 09:53:41.329] [INFO ] [main] com.kts.tku2.Tku2Application Starting Tku2Application using Java 11.0.19 on DESKTOP-5VEEVGU with PID 496 (C:\intelj\tku3\target\classes started by Playdata in C:\intelj\tku3)
+[2023-09-25 09:53:41.334] [INFO ] [main] com.kts.tku2.Tku2Application No active profile set, falling back to default profiles: default
+[2023-09-25 09:53:42.126] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-09-25 09:53:42.204] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 60 ms. Found 5 JPA repository interfaces.
+[2023-09-25 09:53:42.641] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8090 (http)
+[2023-09-25 09:53:42.657] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8090"]
+[2023-09-25 09:53:42.657] [INFO ] [main] org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2023-09-25 09:53:42.657] [INFO ] [main] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2023-09-25 09:53:42.782] [INFO ] [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+[2023-09-25 09:53:42.782] [INFO ] [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1357 ms
+[2023-09-25 09:53:42.938] [INFO ] [main] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-09-25 09:53:42.985] [INFO ] [main] org.hibernate.Version HHH000412: Hibernate ORM core version 5.4.32.Final
+[2023-09-25 09:53:43.079] [INFO ] [main] org.hibernate.annotations.common.Version HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-09-25 09:53:43.157] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+[2023-09-25 09:53:43.204] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+[2023-09-25 09:53:43.219] [INFO ] [main] org.hibernate.dialect.Dialect HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+[2023-09-25 09:53:43.891] [INFO ] [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-09-25 09:53:43.907] [INFO ] [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-09-25 09:53:44.500] [WARN ] [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-09-25 09:53:44.750] [INFO ] [main] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping Adding welcome page template: index
+[2023-09-25 09:53:44.813] [WARN ] [main] org.thymeleaf.templatemode.TemplateMode [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+[2023-09-25 09:53:44.906] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8090"]
+[2023-09-25 09:53:44.922] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8090 (http) with context path ''
+[2023-09-25 09:53:44.938] [INFO ] [main] com.kts.tku2.Tku2Application Started Tku2Application in 4.533 seconds (JVM running for 6.71)
+[2023-09-25 09:53:51.858] [INFO ] [http-nio-8090-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-09-25 09:53:51.858] [INFO ] [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+[2023-09-25 09:53:51.858] [INFO ] [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet Completed initialization in 0 ms
+[2023-09-25 09:53:56.590] [WARN ] [http-nio-8090-exec-3] org.apache.catalina.util.SessionIdGeneratorBase Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [172] milliseconds.
+[2023-09-25 09:56:48.916] [INFO ] [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-09-25 09:56:48.916] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+[2023-09-25 09:56:48.916] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+[2023-09-25 09:56:54.355] [INFO ] [main] com.kts.tku2.Tku2Application Starting Tku2Application using Java 11.0.19 on DESKTOP-5VEEVGU with PID 15932 (C:\intelj\tku3\target\classes started by Playdata in C:\intelj\tku3)
+[2023-09-25 09:56:54.355] [INFO ] [main] com.kts.tku2.Tku2Application No active profile set, falling back to default profiles: default
+[2023-09-25 09:56:55.308] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-09-25 09:56:55.433] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 105 ms. Found 5 JPA repository interfaces.
+[2023-09-25 09:56:56.202] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8090 (http)
+[2023-09-25 09:56:56.212] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8090"]
+[2023-09-25 09:56:56.212] [INFO ] [main] org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2023-09-25 09:56:56.213] [INFO ] [main] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2023-09-25 09:56:56.335] [INFO ] [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+[2023-09-25 09:56:56.336] [INFO ] [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1918 ms
+[2023-09-25 09:56:56.547] [INFO ] [main] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-09-25 09:56:56.600] [INFO ] [main] org.hibernate.Version HHH000412: Hibernate ORM core version 5.4.32.Final
+[2023-09-25 09:56:56.772] [INFO ] [main] org.hibernate.annotations.common.Version HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-09-25 09:56:56.850] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+[2023-09-25 09:56:56.897] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+[2023-09-25 09:56:56.928] [INFO ] [main] org.hibernate.dialect.Dialect HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+[2023-09-25 09:56:57.615] [INFO ] [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-09-25 09:56:57.631] [INFO ] [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-09-25 09:56:58.178] [WARN ] [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-09-25 09:56:58.459] [INFO ] [main] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping Adding welcome page template: index
+[2023-09-25 09:56:58.521] [WARN ] [main] org.thymeleaf.templatemode.TemplateMode [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+[2023-09-25 09:56:58.646] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8090"]
+[2023-09-25 09:56:58.662] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8090 (http) with context path ''
+[2023-09-25 09:56:58.678] [INFO ] [main] com.kts.tku2.Tku2Application Started Tku2Application in 5.105 seconds (JVM running for 7.039)
+[2023-09-25 09:57:12.356] [INFO ] [http-nio-8090-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-09-25 09:57:12.356] [INFO ] [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+[2023-09-25 09:57:12.371] [INFO ] [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet Completed initialization in 15 ms
+[2023-09-25 09:57:17.352] [WARN ] [http-nio-8090-exec-3] org.apache.catalina.util.SessionIdGeneratorBase Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [168] milliseconds.
+[2023-09-25 09:58:36.724] [INFO ] [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-09-25 09:58:36.724] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+[2023-09-25 09:58:36.739] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+[2023-09-25 09:58:42.118] [INFO ] [main] com.kts.tku2.Tku2Application Starting Tku2Application using Java 11.0.19 on DESKTOP-5VEEVGU with PID 1328 (C:\intelj\tku3\target\classes started by Playdata in C:\intelj\tku3)
+[2023-09-25 09:58:42.118] [INFO ] [main] com.kts.tku2.Tku2Application No active profile set, falling back to default profiles: default
+[2023-09-25 09:58:43.064] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-09-25 09:58:43.142] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 60 ms. Found 5 JPA repository interfaces.
+[2023-09-25 09:58:43.642] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8090 (http)
+[2023-09-25 09:58:43.658] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8090"]
+[2023-09-25 09:58:43.658] [INFO ] [main] org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2023-09-25 09:58:43.658] [INFO ] [main] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2023-09-25 09:58:43.783] [INFO ] [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+[2023-09-25 09:58:43.783] [INFO ] [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1603 ms
+[2023-09-25 09:58:43.939] [INFO ] [main] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-09-25 09:58:43.970] [INFO ] [main] org.hibernate.Version HHH000412: Hibernate ORM core version 5.4.32.Final
+[2023-09-25 09:58:44.064] [INFO ] [main] org.hibernate.annotations.common.Version HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-09-25 09:58:44.220] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+[2023-09-25 09:58:44.298] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+[2023-09-25 09:58:44.314] [INFO ] [main] org.hibernate.dialect.Dialect HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+[2023-09-25 09:58:45.095] [INFO ] [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-09-25 09:58:45.110] [INFO ] [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-09-25 09:58:45.579] [WARN ] [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-09-25 09:58:45.798] [INFO ] [main] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping Adding welcome page template: index
+[2023-09-25 09:58:45.860] [WARN ] [main] org.thymeleaf.templatemode.TemplateMode [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+[2023-09-25 09:58:45.954] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8090"]
+[2023-09-25 09:58:45.970] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8090 (http) with context path ''
+[2023-09-25 09:58:45.985] [INFO ] [main] com.kts.tku2.Tku2Application Started Tku2Application in 4.589 seconds (JVM running for 6.622)
+[2023-09-25 09:58:51.952] [INFO ] [http-nio-8090-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-09-25 09:58:51.952] [INFO ] [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+[2023-09-25 09:58:51.952] [INFO ] [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet Completed initialization in 0 ms
+[2023-09-25 09:58:57.250] [WARN ] [http-nio-8090-exec-3] org.apache.catalina.util.SessionIdGeneratorBase Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [183] milliseconds.
+[2023-09-25 09:59:23.510] [INFO ] [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-09-25 09:59:23.526] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+[2023-09-25 09:59:23.526] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+[2023-09-25 09:59:29.399] [INFO ] [main] com.kts.tku2.Tku2Application Starting Tku2Application using Java 11.0.19 on DESKTOP-5VEEVGU with PID 15552 (C:\intelj\tku3\target\classes started by Playdata in C:\intelj\tku3)
+[2023-09-25 09:59:29.415] [INFO ] [main] com.kts.tku2.Tku2Application No active profile set, falling back to default profiles: default
+[2023-09-25 09:59:30.203] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-09-25 09:59:30.266] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 60 ms. Found 5 JPA repository interfaces.
+[2023-09-25 09:59:30.813] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8090 (http)
+[2023-09-25 09:59:30.823] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8090"]
+[2023-09-25 09:59:30.824] [INFO ] [main] org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2023-09-25 09:59:30.824] [INFO ] [main] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2023-09-25 09:59:30.916] [INFO ] [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+[2023-09-25 09:59:30.916] [INFO ] [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1454 ms
+[2023-09-25 09:59:31.105] [INFO ] [main] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-09-25 09:59:31.155] [INFO ] [main] org.hibernate.Version HHH000412: Hibernate ORM core version 5.4.32.Final
+[2023-09-25 09:59:31.270] [INFO ] [main] org.hibernate.annotations.common.Version HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-09-25 09:59:31.378] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+[2023-09-25 09:59:31.425] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+[2023-09-25 09:59:31.445] [INFO ] [main] org.hibernate.dialect.Dialect HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+[2023-09-25 09:59:32.102] [INFO ] [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-09-25 09:59:32.117] [INFO ] [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-09-25 09:59:32.570] [WARN ] [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-09-25 09:59:32.758] [INFO ] [main] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping Adding welcome page template: index
+[2023-09-25 09:59:32.820] [WARN ] [main] org.thymeleaf.templatemode.TemplateMode [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+[2023-09-25 09:59:32.898] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8090"]
+[2023-09-25 09:59:32.914] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8090 (http) with context path ''
+[2023-09-25 09:59:32.929] [INFO ] [main] com.kts.tku2.Tku2Application Started Tku2Application in 4.303 seconds (JVM running for 6.345)
+[2023-09-25 09:59:34.170] [INFO ] [http-nio-8090-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-09-25 09:59:34.170] [INFO ] [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+[2023-09-25 09:59:34.170] [INFO ] [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet Completed initialization in 0 ms
+[2023-09-25 09:59:37.841] [WARN ] [http-nio-8090-exec-3] org.apache.catalina.util.SessionIdGeneratorBase Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [175] milliseconds.
+[2023-09-25 09:59:55.627] [INFO ] [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-09-25 09:59:55.627] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+[2023-09-25 09:59:55.643] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+[2023-09-25 10:00:00.961] [INFO ] [main] com.kts.tku2.Tku2Application Starting Tku2Application using Java 11.0.19 on DESKTOP-5VEEVGU with PID 360 (C:\intelj\tku3\target\classes started by Playdata in C:\intelj\tku3)
+[2023-09-25 10:00:00.961] [INFO ] [main] com.kts.tku2.Tku2Application No active profile set, falling back to default profiles: default
+[2023-09-25 10:00:01.705] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-09-25 10:00:01.767] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 56 ms. Found 5 JPA repository interfaces.
+[2023-09-25 10:00:02.267] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8090 (http)
+[2023-09-25 10:00:02.275] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8090"]
+[2023-09-25 10:00:02.275] [INFO ] [main] org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2023-09-25 10:00:02.275] [INFO ] [main] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2023-09-25 10:00:02.382] [INFO ] [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+[2023-09-25 10:00:02.382] [INFO ] [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1316 ms
+[2023-09-25 10:00:02.538] [INFO ] [main] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-09-25 10:00:02.585] [INFO ] [main] org.hibernate.Version HHH000412: Hibernate ORM core version 5.4.32.Final
+[2023-09-25 10:00:02.679] [INFO ] [main] org.hibernate.annotations.common.Version HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-09-25 10:00:02.757] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+[2023-09-25 10:00:02.804] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+[2023-09-25 10:00:02.819] [INFO ] [main] org.hibernate.dialect.Dialect HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+[2023-09-25 10:00:03.429] [INFO ] [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-09-25 10:00:03.444] [INFO ] [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-09-25 10:00:03.936] [WARN ] [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-09-25 10:00:04.129] [INFO ] [main] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping Adding welcome page template: index
+[2023-09-25 10:00:04.202] [WARN ] [main] org.thymeleaf.templatemode.TemplateMode [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+[2023-09-25 10:00:04.292] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8090"]
+[2023-09-25 10:00:04.316] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8090 (http) with context path ''
+[2023-09-25 10:00:04.327] [INFO ] [main] com.kts.tku2.Tku2Application Started Tku2Application in 4.178 seconds (JVM running for 6.087)
+[2023-09-25 10:00:04.431] [INFO ] [http-nio-8090-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-09-25 10:00:04.432] [INFO ] [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+[2023-09-25 10:00:04.433] [INFO ] [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet Completed initialization in 1 ms
+[2023-09-25 10:00:08.277] [WARN ] [http-nio-8090-exec-3] org.apache.catalina.util.SessionIdGeneratorBase Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [173] milliseconds.

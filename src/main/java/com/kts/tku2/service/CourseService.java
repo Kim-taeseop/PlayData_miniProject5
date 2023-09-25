@@ -1,4 +1,4 @@
-package com.kts.tku2.service.professor;
+package com.kts.tku2.service;
 
 
 import com.kts.tku2.data.entity.Course;

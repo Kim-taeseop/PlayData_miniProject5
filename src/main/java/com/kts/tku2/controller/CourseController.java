@@ -1,10 +1,10 @@
-package com.kts.tku2.controller.professor;
+package com.kts.tku2.controller;
 
 import com.kts.tku2.data.dto.CourseCreateDTO;
 import com.kts.tku2.data.entity.*;
 import com.kts.tku2.data.repository.CourseRepository;
 import com.kts.tku2.data.repository.EnrollmentRepository;
-import com.kts.tku2.service.professor.CourseService;
+import com.kts.tku2.service.CourseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,7 +16,6 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpSession;
 import java.time.LocalDateTime;
-import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -158,7 +157,7 @@ public class CourseController {
 
         // 허용되는 수강 신청 시간 범위 설정
         LocalDateTime startDateTime = LocalDateTime.of(2023, 9, 21, 11, 0); // 시작 시간
-        LocalDateTime endDateTime = LocalDateTime.of(2023, 9, 25, 20, 0); // 종료 시간
+        LocalDateTime endDateTime = LocalDateTime.of(2023, 9, 26, 20, 0); // 종료 시간
 
         // 현재 시간이 허용 범위 내에 있는지 확인
         if (currentDateTime.isBefore(startDateTime) || currentDateTime.isAfter(endDateTime)) {
