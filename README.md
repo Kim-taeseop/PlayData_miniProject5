@@ -53,7 +53,11 @@ DKU 수강신청 사이트를 참고하여 만든 수강신청 시스템 입니�
 - course, professor : ManyToOne Mapping
 - professor, department : ManyToOne Mapping
 - student, department : ManyToOne Mapping
-![image](https://github.com/Kim-taeseop/TKU/assets/137260250/326aaeb1-eb48-427d-90ba-f9194a02c715)
+
+
+![image](https://github.com/Kim-taeseop/TKU/assets/137260250/9d5fe99f-e492-4c55-a315-d90f6337f4ef)
+
+
 
 ---------------------------------------------------------
 ### 4. JPA Repository 활용
