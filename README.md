@@ -56,7 +56,37 @@ DKU 수강신청 사이트를 참고하여 만든 수강신청 시스템 입니�
 ![image](https://github.com/Kim-taeseop/TKU/assets/137260250/326aaeb1-eb48-427d-90ba-f9194a02c715)
 
 ---------------------------------------------------------
+### 4. JPA Repository 활용
 
+
+          // 전 과목 찾기
+          List<T> findAll();
+
+          // 아이디를 이용하여 정보찾기
+          Optional<T> findById(ID id);
+
+          // 아이디를 이용하여 삭제하기
+          void deleteById(ID id);
+          
+          // 로그인을 위한 학번 찾기
+          Professor findByUnid(Integer unid);
+          Student findByUnid(Integer unid);
+
+          // 학과에 포함된 교수 찾기
+          List<Professor> findByPdepartment(Department department);
+
+          // 학생 아이디를 이용하여 수강신청한 과목찾기
+          List<Enrollment> findByStudentId(Long studentId);
+
+          // 이미 신청한 과목 찾기
+          Enrollment findByStudentIdAndCourseName(Long studentId, String courseName);
+
+          // 담당교수가 가르치는 과목찾기
+          List<Course> findByProfessorId(Long professorId);
+
+          
+
+-------------------------------------------------------
 ## 💻 개발 과정
 
 ### 1. 로그인/ 로그아웃 기능
